@@ -1,0 +1,224 @@
+/* reset style  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: '微软雅黑';
+}
+
+body{
+    /* background: url(../images/bg.jpg) repeat center; */
+    color: #564919;
+    /* background-color: #f9ebac; */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* common style */
+.box {
+    max-width: 1200px;
+    margin: 0 auto;  /* 水平居中 */
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* 清除浮动 */
+.clear{
+    clear: both;
+}
+
+/* 高度塌陷 */
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* 标题文本 */
+.title{
+    padding: 80px 0;
+}
+
+/* 主标题 */
+.title h2{
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.title h2::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+    content: '';
+    display: block;
+    width: 300px;
+    height: 2px;
+    background-color: #7a6624;
+}
+
+.title h2::after{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+    content: '';
+    display: block;
+    width: 300px;
+    height: 2px;
+    background-color: #7a6624;
+}
+
+/* 副标题  */
+.ctitle {
+    margin: 60px 0;
+}
+
+.ctitle h3{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-left: 8px solid #da9837;
+    text-align: left;
+    border-bottom: 1px solid #da9837;
+}
+
+/* 默认文本  */
+.textwrap p{
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+/* 默认图片  */
+.imgwrap{
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .25s linear;
+}
+
+.imgwrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.imgwrap:hover{
+    transform: scale(1.1);
+}
+
+/* 卡片  */
+.card {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 8px #d8d8d8;
+    box-sizing: border-box;
+}
+
+/* 导航 */
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #f9ebace2;
+    background-color: #d89a37d3;
+}
+.nav {
+    color: #fff;
+}
+
+.nav li{
+    width: 20%;
+    height: 60px;
+    float: left;
+    text-align: center;
+}
+
+.nav li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.nav li a:hover {
+    background-color: #da9837;
+    text-decoration: underline;
+}
+
+.nav li a.active{
+    background-color: #da9837;
+}
+
+
+/* Start Banner */
+.banner {
+    height: 480px;
+    color: #fff;
+    background: url(../images/banner1.jpg) no-repeat center/cover;
+}
+
+.child-banner {
+    height: 360px;
+}
+
+.banner-c {
+    height: 100%;
+    position: relative;
+}
+
+/* banner文本  */
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    /* background-color: #ec661f; */
+    transform: translateY(-50%);
+}
+
+.banner-title h2 {
+    padding-bottom: 15px;
+    font-size: 44px;
+    font-weight: 400;
+    border-bottom: 2px solid #da9837;
+}
+
+.banner-title p{
+    margin: 20px 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+/* End Banner  */
+
+/* 底部 */
+#footer{
+    margin-top: 80px;
+    padding: 40px 0;
+    font-size: 12px;
+    text-align: center;
+    background-color: #f2bc72;
+    color: #fff;
+}
